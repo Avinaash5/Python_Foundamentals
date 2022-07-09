@@ -1,0 +1,12 @@
+**Hallow Square with Star Pattern***
+n = int(input())
+rows = "* " * n
+count = 0
+for count in range(n):
+    if (count==0) or (count==(n-1)):
+        print(rows)
+    else:
+        m = n-2
+        blank = ("  "*m)
+        print("* " + blank + "*")
+    count = count +1
