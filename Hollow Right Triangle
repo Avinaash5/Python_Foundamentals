@@ -1,0 +1,24 @@
+///Hollow Right Triangle:///
+n = int(input())
+for i in range(0, (n)):
+    if i == 0: # part- 1 logic
+        print('* ' * n)
+    elif i == n - 1: # part- 3 logic
+        print(('  '* (n-1)) + '*')
+    else: # part- 2 logic
+        left_spaces = "  " * (i)          
+        hollow_spaces = "  " * (n-i-2)
+        print(left_spaces+"* "+ hollow_spaces+"* ")
+
+
+///Hollow Right Triangle:///
+n = int(input())
+for i in range(0, (n)):
+    if i == 0: # part- 1 logic
+        print(('  '* (n-1)) + '*')
+    elif i == n - 1: # part- 3 logic
+        print('* ' * n)
+    else: # part- 2 logic
+        left_spaces = "  " * (n-i-1)          
+        hollow_spaces = "  " * (i-1)
+        print(left_spaces+"* "+ hollow_spaces+"* ")
