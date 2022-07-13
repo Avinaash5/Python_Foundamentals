@@ -1,0 +1,16 @@
+n = int(input())
+k= 2*n
+for j in range(1,n+1):
+    spaces = "  "*(k-2)
+    stars = "* "*j
+    print(stars+spaces+stars)
+    k=k-2
+k= n*2
+print("* "*k)
+l=2
+for j in range(1,n):
+    spaces = "  "*l
+    stars = "* "*(n-j)
+    print(stars+spaces+stars)
+    l=l+2
+
