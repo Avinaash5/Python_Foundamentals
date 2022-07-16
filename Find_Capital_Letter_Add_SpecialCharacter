@@ -1,0 +1,21 @@
+n = input()
+uppercase_n=n.upper()
+length_of_n=len(n)
+index=0
+count=0
+for char in n:
+    count=count+1
+    if char in uppercase_n:
+        if count>2:
+            count=count+index
+            uppercase_n=uppercase_n[:count-1]+"_"+uppercase_n[count-1:]
+            index=1
+final_word_in_small=uppercase_n.lower()
+print(final_word_in_small)    
+            
+            
+       
+       
+       
+       
+            
